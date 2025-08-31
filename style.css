@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  font-size: 28px;
+}
+
+input {
+  background: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 8px;
+  margin: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+#output {
+  margin-top: 20px;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #00ff00;
+  background: rgba(0, 255, 0, 0.05);
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.4em;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.glitch {
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
